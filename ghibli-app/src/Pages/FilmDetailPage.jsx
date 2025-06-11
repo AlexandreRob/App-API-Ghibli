@@ -19,9 +19,15 @@ export default function FilmDetailPage() {
           <div className="film-detail-info">
             <h1>{film.title}</h1>
             <div className="film-detail-meta">
-              <p><strong>Réalisateur :</strong> {film.director}</p>
-              <p><strong>Année :</strong> {film.release_date}</p>
-              <p><strong>Score :</strong> {film.rt_score}/100</p>
+              <p>
+                <strong>Réalisateur :</strong> {film.director}
+              </p>
+              <p>
+                <strong>Année :</strong> {film.release_date}
+              </p>
+              <p>
+                <strong>Score :</strong> {film.rt_score}/100
+              </p>
             </div>
             <div className="film-detail-description">
               <h2>Synopsis</h2>

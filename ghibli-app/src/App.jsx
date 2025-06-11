@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-import FilmDetailPage from "./pages/FilmDetailPage";
-import FavoritePage from "./pages/FavoritePage";
+import FilmDetailPage from "./Pages/FilmDetailPage";
+import FavoritePage from "./Pages/FavoritePage";
 import Header from "./components/Header";
 import useStore from "./store/store";
 
@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     filterFilms(search);
   }, [search, filterFilms]);
-  
+
   // Gestion du tri
   useEffect(() => {
     if (sortMethod !== "") {
@@ -63,5 +63,5 @@ function App() {
       </main>
     </BrowserRouter>
   );
- }
- export default App;
+}
+export default App;
